@@ -26,3 +26,9 @@ string Book::getAuthorName()
 {
 	return authorName;
 }
+
+void Book::printRecord() const
+{
+	BaseText::printRecord();
+	cout << authorName << endl;
+}

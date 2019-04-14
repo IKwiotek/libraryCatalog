@@ -15,6 +15,7 @@ public:
 	Book(string ID, string name, string status, string authorName);
 	void setAuthorName(string authorName);
 	string getAuthorName();
+	virtual void printRecord() const;
 
 private:
 	string authorName;

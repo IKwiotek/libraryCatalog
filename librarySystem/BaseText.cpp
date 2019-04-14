@@ -30,6 +30,24 @@ string BaseText::getStatus() const
 	return status;
 }
 
+string BaseText::getCategory() const
+{
+	return category;
+}
+
+bool BaseText::searchRecord(string param) const
+{
+	return (param == getName() || param == getCategory() || param == getID());
+}
+
+void BaseText::printRecord() const
+{
+	cout << ID << endl;
+	cout << name << endl;
+	cout << category << endl;
+	cout << status << endl;
+}
+
 void BaseText::setID(string ID)
 {
 	this->ID = ID;
@@ -43,4 +61,9 @@ void BaseText::setName(string name)
 void BaseText::setStatus(string status)
 {
 	this->status = status;
+}
+
+void BaseText::setCategory(string category)
+{
+	this->category = category;
 }
