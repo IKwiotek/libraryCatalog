@@ -12,12 +12,14 @@ class Magazine : public BaseText
 {
 public:
 	Magazine();
-	Magazine(string ID, string name, string status, string issueNumber);
+	Magazine(string ID, string name, bool status, string category, string issueNumber);
 	void setIssueNumber(string issueNumber);
 	string getIssueNumber();
+	virtual void printRecord() const;
+	virtual void writeToFile(string file, int i) const;
 
 private:
 	string issueNumber;
 };
 
-#endif // Journal_H
+#endif Magazine_H

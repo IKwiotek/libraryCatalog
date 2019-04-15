@@ -7,32 +7,42 @@
 
 using namespace std;
 
+//enum categoryEnum
+//{
+//	Unknown = 0,
+//	Book = 1,
+//	Journal = 2,
+//	Magazine = 3
+//};
+
 class BaseText
 {
 public:
 	BaseText();
-	BaseText(string ID, string name, string status);
+	BaseText(string ID, string name, bool status, string category);
+
 	void setID(string ID);
 	void setName(string name);
-	void setStatus(string status);
+	void setStatus(bool status);
+	/*void setCategory(enum categoryEnum category);*/
 	void setCategory(string category);
+
 	string getID() const;
 	string getName() const;
-	string getStatus() const;
+	bool getStatus() const;
 	string getCategory() const;
+	/*categoryEnum getCategory() const;*/
 
-	bool searchRecord(string param) const;
+	virtual bool searchRecord(string param) const;
 	virtual void printRecord() const;
+	virtual void writeToFile(string file, int i) const;
 
 private:
 	string ID;
 	string name;
-
-	//consider using an enum for this rather than bool or string
-	string status;
-
-	// also consider using an enum for this
+	bool status;
 	string category;
+	/*categoryEnum category;*/
 };
 
 #endif // BaseText_H

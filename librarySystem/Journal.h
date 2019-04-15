@@ -12,12 +12,14 @@ class Journal : public BaseText
 {
 public:
 	Journal();
-	Journal(string ID, string name, string status, string volume);
+	Journal(string ID, string name, bool status, string category, string volume);
 	void setVolume(string volume);
 	string getVolume();
+	virtual void printRecord() const;
+	virtual void writeToFile(string file, int i) const;
 
 private:
 	string volume;
 };
 
-#endif // Journal_H
+#endif Journal_H
