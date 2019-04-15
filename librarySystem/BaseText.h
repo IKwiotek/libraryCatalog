@@ -24,14 +24,12 @@ public:
 	void setID(string ID);
 	void setName(string name);
 	void setStatus(bool status);
-	/*void setCategory(enum categoryEnum category);*/
 	void setCategory(string category);
 
 	string getID() const;
 	string getName() const;
 	bool getStatus() const;
 	string getCategory() const;
-	/*categoryEnum getCategory() const;*/
 
 	virtual bool searchRecord(string param) const;
 	virtual void printRecord() const;
@@ -42,7 +40,6 @@ private:
 	string name;
 	bool status;
 	string category;
-	/*categoryEnum category;*/
 };
 
-#endif // BaseText_H
+#endif BaseText_H

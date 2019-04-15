@@ -13,8 +13,11 @@ class Book : public BaseText
 public:
 	Book();
 	Book(string ID, string name, bool status, string category, string authorName);
+
 	void setAuthorName(string authorName);
+
 	string getAuthorName();
+
 	virtual bool searchRecord(string param) const;
 	virtual void printRecord() const;
 	virtual void writeToFile(string file, int i) const;
@@ -24,4 +27,4 @@ private:
 };
 
 
-#endif // Book_H
+#endif Book_H

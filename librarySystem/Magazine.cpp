@@ -33,20 +33,13 @@ string Magazine::getIssueNumber()
 
 void Magazine::printRecord() const
 {
+	cout << "Issue Number: " << setw(14) << left << issueNumber;
 	BaseText::printRecord();
-	cout << "Issue Number: " << issueNumber << endl;
 }
 
 void Magazine::writeToFile(string file, int i) const
 {
 	BaseText::writeToFile(file, i);
-
-	string tempStatus;
-
-	/*filebuf fb;
-	fb.open(file, std::ios::app);
-	std::ostream os(&fb);*/
-
 	ofstream out;
 	out.open(file, ios::app);
 

@@ -47,25 +47,17 @@ bool Book::searchRecord(string param) const
 	{
 		return false;
 	}
-
 }
 
 void Book::printRecord() const
 {
-	BaseText::printRecord();
-	cout << "Author Name: " << authorName << endl;
+	cout << "Author Name: " << setw(15) << left << authorName;
+	BaseText::printRecord(); 
 }
 
 void Book::writeToFile(string file, int i) const
 {
 	BaseText::writeToFile(file, i);
-
-	string tempStatus;
-
-	/*filebuf fb;
-	fb.open(file, std::ios::app);
-	std::ostream os(&fb);*/
-
 	ofstream out;
 	out.open(file, ios::app);
 

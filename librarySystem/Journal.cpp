@@ -33,15 +33,13 @@ string Journal::getVolume()
 
 void Journal::printRecord() const
 {
+	cout << "Volume: " << setw(20) << left << volume;
 	BaseText::printRecord();
-	cout << "Volume: " << volume << endl;
 }
 
 void Journal::writeToFile(string file, int i) const
 {
 	BaseText::writeToFile(file, i);
-	string tempStatus;
-
 	ofstream out;
 	out.open(file, ios::app);
 

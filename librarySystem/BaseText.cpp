@@ -66,9 +66,9 @@ bool BaseText::searchRecord(string param) const
 
 void BaseText::printRecord() const
 {
-	cout << "ID: " << ID << endl;
-	cout << "Name: " << name << endl;
-	cout << "Category: " << category << endl;
+	cout << "ID: " << setw(10) << left << ID;
+	cout << "Name: " << setw(20) << left << name;
+	cout << "Category: " << setw(15) << left << category;
 
 	if (status == 1)
 	{
@@ -111,15 +111,3 @@ void BaseText::writeToFile(string file, int i) const
 
 	out.close();
 }
-
-
-
-//void BaseText::setCategory(categoryEnum category)
-//{
-//	this->category = category;
-//}
-
-//categoryEnum BaseText::getCategory() const
-//{
-//	return category;
-//}
