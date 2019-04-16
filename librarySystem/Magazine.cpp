@@ -26,7 +26,7 @@ void Magazine::setIssueNumber(string issueNumber)
 	this->issueNumber = issueNumber;
 }
 
-string Magazine::getIssueNumber()
+string Magazine::getIssueNumber() const
 {
 	return issueNumber;
 }

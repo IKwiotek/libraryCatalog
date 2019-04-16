@@ -34,6 +34,7 @@ public:
 	virtual bool searchRecord(string param) const;
 	virtual void printRecord() const;
 	virtual void writeToFile(string file, int i) const;
+	virtual ~BaseText() {};
 
 private:
 	string ID;

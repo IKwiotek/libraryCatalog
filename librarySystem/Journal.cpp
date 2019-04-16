@@ -26,7 +26,7 @@ void Journal::setVolume(string volume)
 	this->volume = volume;
 }
 
-string Journal::getVolume()
+string Journal::getVolume() const
 {
 	return volume;
 }

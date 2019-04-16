@@ -26,7 +26,7 @@ void Book::setAuthorName(string authorName)
 	this->authorName = authorName;
 }
 
-string Book::getAuthorName()
+string Book::getAuthorName() const
 {
 	return authorName;
 }

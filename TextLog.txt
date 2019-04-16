@@ -1,60 +1,75 @@
 J001
-Journal1
+New York Times
 True
 Journal
-009
+Vol1
 J002
-Journal2
+Home and Garden
 True
 Journal
-019
+Vol2
 J003
-Journal3
+Cat Friends
 True
 Journal
-020
+Vol3
 J004
-Journal4
+Good Neighbor
 True
 Journal
-071
+Vol4
 J005
-Journal5
+Sandals Keeper
 True
 Journal
-012
-001
+Vol5
+B001
+Harry Potter
+True
+Book
+JK Rowling
+B002
 Book1
 True
 Book
-AuthorOne
-002
-Book2
+Albert R
+B003
+Time Keepers
 True
 Book
-AuthorTwo
-003
-Book3
+Sean Sean
+B004
+Bose Time
 True
 Book
-AuthorThree
-004
-Book4
+Grant Pend
+B005
+Hammer Down
 True
 Book
-AuthorFour
-001
-Mag1
+AL Neal
+M001
+Quiet Bay
 True
 Magazine
-017
-002
-Mag2
+I017
+M002
+Normal Beans
 True
 Magazine
-009
-003
-Mag3
+I009
+M003
+Orange City
 True
 Magazine
-005
+I005
+M004
+New Dark
+True
+Magazine
+I088
+M005
+Left Right
+True
+Magazine
+I010

@@ -16,10 +16,11 @@ public:
 
 	void setIssueNumber(string issueNumber);
 
-	string getIssueNumber();
+	string getIssueNumber() const;
 
 	virtual void printRecord() const;
 	virtual void writeToFile(string file, int i) const;
+	virtual ~Magazine() {};
 
 private:
 	string issueNumber;

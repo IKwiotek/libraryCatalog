@@ -16,10 +16,11 @@ public:
 
 	void setVolume(string volume);
 
-	string getVolume();
+	string getVolume() const;
 
 	virtual void printRecord() const;
 	virtual void writeToFile(string file, int i) const;
+	virtual ~Journal() {};
 
 private:
 	string volume;
